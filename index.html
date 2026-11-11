@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>آریا | Arya - ساخت برنامه با هوش مصنوعی</title>
+  <meta name="description" content="وب‌سایت شخصی آریا، توسعه‌دهنده برنامه‌های مبتنی بر هوش مصنوعی" />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #141b33;
+      --text: #e8ecf8;
+      --muted: #a9b3d1;
+      --accent: #6ea8fe;
+      --border: #243055;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Tahoma, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #0b1020 0%, #0f1730 100%);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 24px; }
+    header {
+      padding: 56px 0 32px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    h1 { margin: 0 0 8px; font-size: 40px; }
+    h1 span { color: var(--accent); font-size: 28px; }
+    .subtitle { color: var(--muted); margin: 0 auto; max-width: 650px; }
+    .actions { margin-top: 20px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .btn.primary { background: var(--accent); color: #081225; border-color: transparent; font-weight: bold; }
+    section { margin: 20px 0; }
+    .card {
+      background: rgba(20, 27, 51, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+    }
+    h2 { margin: 0 0 12px; font-size: 22px; }
+    p { margin: 0 0 10px; color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .item {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      background: #10172d;
+    }
+    .item h3 { margin: 0 0 6px; font-size: 17px; color: var(--text); }
+    ul { margin: 0; padding-right: 20px; color: var(--muted); }
+    footer { text-align: center; color: var(--muted); padding: 28px 0 10px; font-size: 14px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">وب‌سایت شخصی</div>
+      <h1>آریا <span>(Arya)</span></h1>
+      <p class="subtitle">
+        توسعه‌دهندهٔ برنامه‌های مبتنی بر هوش مصنوعی؛ علاقه‌مند به ساخت ابزارهای کاربردی، هوشمند و در دسترس.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">مشاهده پروژه‌ها</a>
+        <a class="btn" href="#contact">تماس با من</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="card">
+        <h2>دربارهٔ من</h2>
+        <p>
+          من آریا هستم و در حوزهٔ ساخت برنامه با هوش مصنوعی فعالیت می‌کنم. تمرکز من روی طراحی و توسعهٔ
+          راهکارهایی است که با کمک AI کارها را ساده‌تر، سریع‌تر و هوشمندتر انجام دهند.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="card">
+        <h2>حوزه‌ها و مهارت‌ها</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>اپلیکیشن‌های AI</h3>
+            <p>طراحی و پیاده‌سازی برنامه‌های کاربردی مبتنی بر مدل‌های هوش مصنوعی.</p>
+          </div>
+          <div class="item">
+            <h3>چت‌بات و دستیار هوشمند</h3>
+            <p>ساخت دستیارهای گفت‌وگومحور برای پاسخ‌گویی و انجام وظایف.</p>
+          </div>
+          <div class="item">
+            <h3>اتوماسیون</h3>
+            <p>خودکارسازی فرآیندها برای افزایش بهره‌وری و کاهش کار تکراری.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="card">
+        <h2>پروژه‌ها</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>پروژه ۱ (نمونه)</h3>
+            <p>توضیح کوتاه دربارهٔ پروژه، مشکل مورد نظر و راه‌حل ارائه‌شده.</p>
+          </div>
+          <div class="item">
+            <h3>پروژه ۲ (در حال انجام)</h3>
+            <p>توضیح کوتاه دربارهٔ ابزار یا برنامهٔ AI که در حال توسعه است.</p>
+          </div>
+          <div class="item">
+            <h3>پروژه ۳ (ایده)</h3>
+            <p>جایی برای معرفی ایده‌ها یا آزمایش‌های آینده در حوزهٔ هوش مصنوعی.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h2>تماس</h2>
+        <p>برای همکاری یا گفتگو می‌توانید از طریق راه‌های زیر در ارتباط باشید:</p>
+        <ul>
+          <li>ایمیل: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+          <li>گیت‌هاب: <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Arya — ساخته‌شده با علاقه به هوش مصنوعی
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
